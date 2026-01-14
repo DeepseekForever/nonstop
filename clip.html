@@ -3,66 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Концертное видео | Markol - DeepseekNon-stop</title>
+    <title>Видео | DeepseekNon-stop</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico">
 </head>
 <body>
-    <div class="concert-rays"></div>
-    <div class="stage">
-        <div class="container">
-            <h1 class="concert-title">Концертное видео</h1>
-            <p class="subtitle" style="text-align: center; margin-bottom: 2rem;">DeepseekNon-stop | Лайв-выступление</p>
+    <header>
+        <h1>Markol - DeepseekNon-stop</h1>
+        <p>Домашний релиз 2026</p>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="audio.html">Трек</a>
+            <a href="text.html">Текст</a>
+            <a href="clip.html" class="active">Видео</a>
+            <a href="copyright.html">Инфо</a>
+        </nav>
+    </header>
 
-            <nav class="nav-console">
-                <a href="index.html" class="nav-btn">ГЛАВНАЯ</a>
-                <a href="text.html" class="nav-btn">ТЕКСТ</a>
-                <a href="audio.html" class="nav-btn">ТРЕК</a>
-                <a href="clip.html" class="nav-btn active">ВИДЕО</a>
-                <a href="copyright.html" class="nav-btn">ОФИЦИАЛЬНО</a>
-            </nav>
-
-            <!-- Видеоплеер -->
-            <div class="video-stage">
-                <div class="video-player">
-                    <!-- Замени video.mp4 на своё видео -->
-                    <video controls poster="photo.png" style="width: 100%;">
-                        <source src="video.mp4" type="video/mp4">
-                        Ваш браузер не поддерживает видео.
-                    </video>
-                </div>
-                <div class="video-info" style="text-align: center; margin-top: 20px;">
-                    <h3 style="color: var(--spotlight-yellow);">Markol - DeepseekNon-stop (Live Performance)</h3>
-                    <p style="opacity: 0.9;">Официальное концертное видео | Записано в 2024</p>
-                </div>
+    <main>
+        <section>
+            <h2>Видео</h2>
+            
+            <div class="video-container">
+                <video controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Твой браузер не тянет видео.
+                </video>
             </div>
-
-            <!-- Описание -->
-            <div class="concert-screens">
-                <div class="screen-card">
-                    <div class="screen-icon">🎬</div>
-                    <h3>О ВИДЕО</h3>
-                    <p>Это не просто клип — это полноценное лайв-выступление с концертной энергетикой. 
-                    Снято на профессиональную камеру с качественным звуком.</p>
-                </div>
-
-                <div class="screen-card">
-                    <div class="screen-icon">🎥</div>
-                    <h3>СЪЕМКИ</h3>
-                    <p>Видео снималось в стилизованной под концерт студии с использованием светового оборудования, 
-                    дым-машины и профессионального монтажа.</p>
-                </div>
-
-                <div class="screen-card">
-                    <div class="screen-icon">📱</div>
-                    <h3>СКАЧАТЬ</h3>
-                    <p>Скачайте видео в высоком качестве для офлайн-просмотра или использования в своих проектах 
-                    (с соблюдением авторских прав).</p>
-                    <a href="video.mp4" download class="screen-btn" style="margin-top: 15px;">СКАЧАТЬ ВИДЕО</a>
-                </div>
+            
+            <div class="download-section">
+                <a href="video.mp4" download class="btn">Скачать видео</a>
             </div>
-        </div>
-    </div>
-    <script src="script.js"></script>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 DeepseekNon-stop</p>
+    </footer>
 </body>
 </html>
