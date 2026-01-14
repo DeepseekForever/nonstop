@@ -3,41 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Видео | DeepseekNon-stop</title>
+    <title>Видео | Markol - DeepseekNon-stop</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-    <header>
-        <h1>Markol - DeepseekNon-stop</h1>
-        <p>Домашний релиз 2026</p>
-        <nav>
-            <a href="index.html">Главная</a>
-            <a href="audio.html">Трек</a>
-            <a href="text.html">Текст</a>
-            <a href="clip.html" class="active">Видео</a>
-            <a href="copyright.html">Инфо</a>
+    <header class="site-header">
+        <h1 class="site-title">Markol - DeepseekNon-stop</h1>
+        <p class="site-subtitle">Домашний гибридный релиз • 2026</p>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="nav-link">Главная</a></li>
+                <li><a href="audio.html" class="nav-link">Трек</a></li>
+                <li><a href="text.html" class="nav-link">Текст</a></li>
+                <li><a href="clip.html" class="nav-link active">Видео</a></li>
+                <li><a href="copyright.html" class="nav-link">Информация</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Видео</h2>
+        <section class="content-section fade-in">
+            <h2 class="section-title">Видео релиза</h2>
+            <p style="color: var(--text-muted); margin-bottom: 25px;">
+                Видео для трека DeepseekNon-stop
+            </p>
             
-            <div class="video-container">
-                <video controls>
-                    <source src="video.mp4" type="video/mp4">
-                    Твой браузер не тянет видео.
-                </video>
+            <!-- Видеоплеер -->
+            <div class="player-card">
+                <div class="player-header">
+                    <div class="track-title">DeepseekNon-stop (видео)</div>
+                </div>
+                
+                <div class="player-main">
+                    <video 
+                        controls 
+                        style="width: 100%; border-radius: 6px;"
+                    >
+                        <source src="video.mp4" type="video/mp4">
+                        Ваш браузер не поддерживает видео.
+                    </video>
+                </div>
             </div>
             
-            <div class="download-section">
-                <a href="video.mp4" download class="btn">Скачать видео</a>
+            <div style="margin-top: 30px; text-align: center;">
+                <a href="video.mp4" download class="download-btn">⬇ Скачать видео</a>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>© 2026 DeepseekNon-stop</p>
+    <footer class="site-footer fade-in">
+        <p>Домашний релиз • 2026</p>
+        <p><a href="index.html" style="color: var(--text-muted); font-size: 0.9rem;">← На главную</a></p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
