@@ -3,66 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Концертное видео | Markol - DeepseekNon-stop</title>
+    <title>Видео | Markol - DeepseekNon-stop</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-    <div class="concert-rays"></div>
-    <div class="stage">
-        <div class="container">
-            <h1 class="concert-title">Концертное видео</h1>
-            <p class="subtitle" style="text-align: center; margin-bottom: 2rem;">DeepseekNon-stop | Лайв-выступление</p>
+    <header class="site-header">
+        <h1 class="site-title">Markol - DeepseekNon-stop</h1>
+        <p class="site-subtitle">Домашний гибридный релиз • 2026</p>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="nav-link">Главная</a></li>
+                <li><a href="audio.html" class="nav-link">Трек</a></li>
+                <li><a href="text.html" class="nav-link">Текст</a></li>
+                <li><a href="clip.html" class="nav-link active">Видео</a></li>
+                <li><a href="copyright.html" class="nav-link">Информация</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <nav class="nav-console">
-                <a href="index.html" class="nav-btn">ГЛАВНАЯ</a>
-                <a href="text.html" class="nav-btn">ТЕКСТ</a>
-                <a href="audio.html" class="nav-btn">ТРЕК</a>
-                <a href="clip.html" class="nav-btn active">ВИДЕО</a>
-                <a href="copyright.html" class="nav-btn">ОФИЦИАЛЬНО</a>
-            </nav>
-
+    <main>
+        <section class="content-section fade-in">
+            <h2 class="section-title">Видео релиза</h2>
+            <p style="color: var(--text-muted); margin-bottom: 25px;">
+                Простое видео для этого трека. Загружено на GitHub Releases.
+            </p>
+            
             <!-- Видеоплеер -->
-            <div class="video-stage">
-                <div class="video-player">
-                    <!-- Замени video.mp4 на своё видео -->
-                    <video controls poster="photo.png" style="width: 100%;">
-                        <source src="video.mp4" type="video/mp4">
+            <div class="player-card">
+                <div class="player-header">
+                    <div class="track-title">DeepseekNon-stop (видео)</div>
+                    <span class="track-badge">Домашний видеоклип</span>
+                </div>
+                
+                <div class="player-main">
+                    <video 
+                        controls 
+                        style="width: 100%; border-radius: 6px;"
+                        poster="cover.jpg" <!-- По желанию: можно добавить постер -->
+                    >
+                        <source 
+                            src="https://release-assets.githubusercontent.com/github-production-release-asset/1133984708/113df4ab-8fa7-4ee3-a710-1987c6026789?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-01-14T05%3A33%3A43Z&rscd=attachment%3B+filename%3Dvideo.mp4&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-01-14T04%3A33%3A37Z&ske=2026-01-14T05%3A33%3A43Z&sks=b&skv=2018-11-09&sig=GiSzd4Kq1WK%2BnuI9TOevmfkR4lyh98yXwu7iFZqCLDo%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYщуkiOiJmZWxlYXNlLWFzc2V0cy5naXRodWJ1c2VyY29udGVudC5jb20iLCJrZXkiOiJrZXkxIiwiZXhwIjoxNzY4MzY4MDA2LCJuYmYiOjE3NjgzNjYyMDYsInBhdGgiOiJyZWxlYXNlYXNzZXRwcm9kdWN0aW9uLmJsb2IuY29yZS53aW5kb3dzLm5ldCJ9.WuYst6-i1NET5KTUKdlJKpogpU50Akt5T9l9Ojoh-XE&response-content-disposition=attachment%3B%20filename%3Dvideo.mp4&response-content-type=application%2Foctet-stream" 
+                            type="video/mp4"
+                        >
                         Ваш браузер не поддерживает видео.
                     </video>
                 </div>
-                <div class="video-info" style="text-align: center; margin-top: 20px;">
-                    <h3 style="color: var(--spotlight-yellow);">Markol - DeepseekNon-stop (Live Performance)</h3>
-                    <p style="opacity: 0.9;">Официальное концертное видео | Записано в 2024</p>
+                
+                <div class="track-info">
+                    <div class="info-item">
+                        <span class="info-label">Источник</span>
+                        GitHub Releases
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Формат</span>
+                        MP4
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Релиз</span>
+                        Январь 2026
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Статус</span>
+                        <span id="video-status" style="color: #4CAF50;">✓ Ссылка активна</span>
+                    </div>
                 </div>
             </div>
-
-            <!-- Описание -->
-            <div class="concert-screens">
-                <div class="screen-card">
-                    <div class="screen-icon">🎬</div>
-                    <h3>О ВИДЕО</h3>
-                    <p>Это не просто клип — это полноценное лайв-выступление с концертной энергетикой. 
-                    Снято на профессиональную камеру с качественным звуком.</p>
-                </div>
-
-                <div class="screen-card">
-                    <div class="screen-icon">🎥</div>
-                    <h3>СЪЕМКИ</h3>
-                    <p>Видео снималось в стилизованной под концерт студии с использованием светового оборудования, 
-                    дым-машины и профессионального монтажа.</p>
-                </div>
-
-                <div class="screen-card">
-                    <div class="screen-icon">📱</div>
-                    <h3>СКАЧАТЬ</h3>
-                    <p>Скачайте видео в высоком качестве для офлайн-просмотра или использования в своих проектах 
-                    (с соблюдением авторских прав).</p>
-                    <a href="video.mp4" download class="screen-btn" style="margin-top: 15px;">СКАЧАТЬ ВИДЕО</a>
-                </div>
+            
+            <div style="margin-top: 30px;">
+                <a href="#" onclick="downloadVideo(); return false;" class="download-btn">⬇ Скачать видео</a>
+                <p style="color: var(--text-muted); font-size: 0.8rem; margin-top: 10px;">
+                    Ссылка может иметь ограниченный срок действия.
+                </p>
             </div>
-        </div>
-    </div>
+        </section>
+        
+        <section class="content-section fade-in">
+            <h2 class="section-title">О видео</h2>
+            
+            <div class="info-card">
+                <h3 class="card-title">Техническая информация</h3>
+                <p>а ее нету</p>
+                
+                <div style="margin-top: 15px; padding: 15px; background: rgba(0,0,0,0.2); border-radius: 6px;">
+                    <p style="font-size: 0.8rem; color: var(--text-muted); word-break: break-all;">
+                        <strong>привет/strong><br>
+                        <span id="video-url"></span>
+                    </p>
+                </div>
+                
+                <p style="margin-top: 15px; font-size: 0.9rem; color: var(--text-muted);">
+            
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer fade-in">
+        <p>В релиз • 2026</p>
+        <p><a href="index.html" style="color: var(--text-muted); font-size: 0.9rem;">← На главную</a></p>
+    </footer>
+
     <script src="script.js"></script>
+    <script>
+        // Простая проверка видео
+        document.addEventListener('DOMContentLoaded', function() {
+            const videoUrl = 'https://release-assets.githubusercontent.com/github-production-release-asset/1133984708/113df4ab-8fa7-4ee3-a710-1987c6026789?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-01-14T05%3A33%3A43Z&rscd=attachment%3B+filename%3Dvideo.mp4&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-01-14T04%3A33%3A37Z&ske=2026-01-14T05%3A33%3A43Z&sks=b&skv=2018-11-09&sig=GiSzd4Kq1WK%2BnuI9TOevmfkR4lyh98yXwu7iFZqCLDo%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc2ODM2ODAwNiwibmJmIjoxNzY4MzY2MjA2LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.WuYst6-i1NET5KTUKdlJKpogpU50Akt5T9l9Ojoh-XE&response-content-disposition=attachment%3B%20filename%3Dvideo.mp4&response-content-type=application%2Foctet-stream';
+            
+            // Показываем укороченный URL
+            document.getElementById('video-url').textContent = videoUrl.substring(0, 80) + '...';
+            
+            // Проверяем загрузку видео
+            const video = document.querySelector('video');
+            const statusEl = document.getElementById('video-status');
+            
+            if (video) {
+                video.addEventListener('error', function() {
+                    statusEl.textContent = '✗ Ошибка загрузки';
+                    statusEl.style.color = '#f44336';
+                    console.error('Видео не загрузилось. Возможно, ссылка устарела.');
+                });
+                
+                video.addEventListener('loadeddata', function() {
+                    console.log('Видео успешно загружено');
+                });
+            }
+        });
+        
+        // Функция для скачивания видео
+        function downloadVideo() {
+            const videoUrl = 'https://release-assets.githubusercontent.com/github-production-release-asset/1133984708/113df4ab-8fa7-4ee3-a710-1987c6026789?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-01-14T05%3A33%3A43Z&rscd=attachment%3B+filename%3Dvideo.mp4&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-01-14T04%3A33%3A37Z&ske=2026-01-14T05%3A33%3A43Z&sks=b&skv=2018-11-09&sig=GiSzd4Kq1WK%2BnuI9TOevmfkR4lyh98yXwu7iFZqCLDo%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc2ODM2ODAwNiwibmJmIjoxNzY4MzY2MjA2LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.WuYst6-i1NET5KTUKdlJKpogpU50Akt5T9l9Ojoh-XE&response-content-disposition=attachment%3B%20filename%3Dvideo.mp4&response-content-type=application%2Foctet-stream';
+            
+            // Создаём временную ссылку для скачивания
+            const link = document.createElement('a');
+            link.href = videoUrl;
+            link.download = 'DeepseekNon-stop_video.mp4';
+            link.target = '_blank';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            console.log('Запущено скачивание видео');
+        }
+    </script>
 </body>
 </html>
